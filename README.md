@@ -26,9 +26,19 @@ Used eight regression models on our dataset, and all yielded approximately the s
 
 Evaluation
 For evaluation purposes, focused on evaluating the Random Forest Regression model and attempted to improve its R2. For this regressor, the validation curve showed a large distance between R2 of the training set and validation set. Additionally, the validation curve displays a low R-squared value. The options for addressing this is to add new features, replace the model, or adjust hyperparameters.
+Evaluation.png
+
+Attempted to improve the R2 score by examining different values for the cross-validation hyperparameter of the Random Forest regressor. While the R2 score did improve with additional folds, the highest R2 score was 0.479 with 5 folds, which is not much higher than without the folds.
+
+Conclusions and Recommendations:
+Day features and weather conditions are not strongly correlated with the volume of crime and are not particularly predictive of crime volume.  We recommend exploring predictability using location or demographics of the service area as features and/or adjusting hyperparameters of other models.
 
 
-
+References:
+1. DataTechNotes: LightGBM Regression Example in Python https://www.datatechnotes.com/2022/03/lightgbm-regression-example-in-python.html 
+2. Towards DataScience https://towardsdatascience.com/cyclical-features-encoding-its-about-time-ce23581845ca 
+3. Larceny definition https://en.wikipedia.org/wiki/Larceny
+4. Baltimore will revise its police districts for the first time in more than 60 years. https://foxbaltimore.com/news/local/baltimore-will-revise-its-police-districts-for-the-first-time-in-more-than-60-years 
 
 
 
