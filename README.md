@@ -15,4 +15,8 @@ https://www.ncei.noaa.gov/access/search/dataset-search
 
 The following shows the volume of crime in each district and the volume of each crime description. 
 
+![image](https://github.com/sreya134/crime-prediction/assets/125150816/68fbb16e-e669-4437-80ba-1c0b40eefe67)
+
+
+
 
