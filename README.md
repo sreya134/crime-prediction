@@ -16,6 +16,19 @@ https://www.ncei.noaa.gov/access/search/dataset-search
 The following shows the volume of crime in each district and the volume of each crime description. 
 
 ![image](https://github.com/sreya134/crime-prediction/assets/125150816/68fbb16e-e669-4437-80ba-1c0b40eefe67)
+![image](https://github.com/sreya134/crime-prediction/assets/125150816/ca4e4679-275b-4876-a48a-58b7840ba3c2)
+
+Data Preparation:
+Many of the columns in the crime dataset contained null values. For example, 3% of observations had ethnicity completed, which is very low quality. However, for this business problem, most features in the crime dataset did not add value. Furthermore, I opted to focus on dates between January 1, 2010 and December 31, 2019. Therefore, most data quality issues were resolved simply by the removal of the columns and/or observations not necessary for this project. The weather dataset, however, did have missing values that needed to be filled in; accomplished this by using a backfill function.
+
+Modeling
+Used eight regression models on our dataset, and all yielded approximately the same results – an R2 between 0.42 and 0.49.  The Random Forest Regression model yielded the lowest R2 and the LightGBM regressor yielded highest R2 of 0.49. LightGBM is an open-source gradient boosting framework that is based on tree learning algorithm.
+
+Evaluation
+For evaluation purposes, focused on evaluating the Random Forest Regression model and attempted to improve its R2. For this regressor, the validation curve showed a large distance between R2 of the training set and validation set. Additionally, the validation curve displays a low R-squared value. The options for addressing this is to add new features, replace the model, or adjust hyperparameters.
+
+
+
 
 
 
