@@ -24,7 +24,7 @@ Many of the columns in the crime dataset contained null values. For example, 3% 
 Modeling
 Used eight regression models on our dataset, and all yielded approximately the same results – an R2 between 0.42 and 0.49.  The Random Forest Regression model yielded the lowest R2 and the LightGBM regressor yielded highest R2 of 0.49. LightGBM is an open-source gradient boosting framework that is based on tree learning algorithm.
 
-Evaluation
+Evaluation:
 For evaluation purposes, focused on evaluating the Random Forest Regression model and attempted to improve its R2. For this regressor, the validation curve showed a large distance between R2 of the training set and validation set. Additionally, the validation curve displays a low R-squared value. The options for addressing this is to add new features, replace the model, or adjust hyperparameters.
 Evaluation.png
 
